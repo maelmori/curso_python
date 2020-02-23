@@ -68,13 +68,19 @@ print("¡{} {}!".format(inicio_saludo, final_saludo))
 # de Python
 print(f"¡{inicio_saludo} {final_saludo}!")
 
+
+#%%
+# EJERCICIO:
+# Declara una variable con tu nombre y otra con tu apellido; 
+# y haz que se imprima en la pantalla un saludo usando esas variables.
+
 #%%
 # Los métodos son acciones que pueden hacer las cadenas. Por ejemplo,
 # se pueden pasar a mayúsculas
 print(inicio_saludo.upper())
 
 #%%
-# Para usar un método, no tienes por que meter la cadena en una variable
+# Para usar un método, no tienes por que usar la cadena en una variable
 print("hola".upper())
 
 #%%
@@ -96,6 +102,15 @@ print("hola!".isalnum())
 
 #%% Los métodos se pueden encadenar:
 print(" hola ".strip().capitalize().replace("la","lita"))
+
+
+#%%
+# EJERCICIO: 
+# usando métodos de cadenas, y la variable "texto", haz que se imprima
+# Buenos días "profesor" Falken.
+# Truco: puedes reemplazar una cadena de texto por ... ¡nada en absoluto! 
+texto = "BUENAS NOCHES ---PROFESOR FALKEN ."
+print(texto)
 
 #%%
 """
@@ -119,6 +134,7 @@ print(1 + int("2"))
 #%%
 # ¿Por qué es necesario comvertir?
 # Por que los números no tienen los métodos de las cadenas
+uno = 1
 uno.replace(1,3)
 #%%
 # ni las cadenas tienen las operaciones de los números
@@ -129,9 +145,9 @@ hola/mundo
 
 #%%
 # Saber el tipo de una variable.
-type(uno)
-type(inicio_saludo)
-isinstance(inicio_saludo, str)
+print(type(uno))
+print(type(inicio_saludo))
+print(isinstance(inicio_saludo, str))
 
 #%%
 # Más sobre números:
@@ -208,12 +224,18 @@ numero = Decimal("2.231.099,12")
 numero = Decimal("2231099.12")
 print(numero)
 #%%
-# Muchas veces leyebdo ficheros de excel tendremos el formato español
+# Muchas veces leyendo ficheros de excel tendremos el formato español
 # así que es importante poder leerlo correctamente.
 # La manera buena es usar babel
 from babel.numbers import parse_decimal
 numero = parse_decimal('2.231.099,12', locale='es_ES')
 print(numero)
+
+#%% EJERCICIO
+# Calcula el 30% de la variable "numero",
+# y muestra el resutado en formato español
+numero="3.456.134,12"
+
 
 #%% Variables de tipo BOOL
 # SIEMPRE DAN VERDADERO (True) O FALSE (False)

@@ -23,3 +23,9 @@ print(1+2)
 a = 1
 b = 2
 print(a+b)
+
+#%%
+# EJERCICIO
+# Declara dos variables con dos numeros cualesquiera
+# Imprime su resta 
+# PISTA: el operador para restar es el guión medio -
